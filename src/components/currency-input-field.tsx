@@ -6,7 +6,7 @@ interface CurrencyInputFieldProps {
   value?: number;
   field?: string;
   getSwapPrice?: (value: number) => void;
-  spinner?: React.ComponentType; // 这是一个组件类型
+  spinner?: React.ComponentType;
 }
 
 export const CurrencyInputField:React.FC<CurrencyInputFieldProps> = ({ loading, value, field, getSwapPrice, spinner: Spinner, }) => {

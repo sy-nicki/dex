@@ -1,6 +1,5 @@
 import { cn } from "@/utils"
 import * as React from "react"
-// 为组件的 props 明确指定类型
 interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   icon?: React.ReactNode;
   iconRight?: React.ReactNode;

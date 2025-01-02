@@ -59,10 +59,10 @@ export const Swap = () => {
     setLoading(false);
   };
   const handleTokenOneChange = (newToken: Token) => {
-    setTokenOne(newToken);  // 更新 tokenOne 的值
+    setTokenOne(newToken);
   };
   const handleTokenTwoChange = (newToken: Token) => {
-    setTokenTwo(newToken);  // 更新 tokenOne 的值
+    setTokenTwo(newToken);
   };
   const handleConnectWallet = () => {
     if (!isConnected && openConnectModal) {

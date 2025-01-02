@@ -30,7 +30,6 @@ export const SwapTokenContextProvider = ({ children }: { children: ReactNode }) 
 
   const swapUpdatePrice = async (tokenIn: TokenInterface, tokenOut: TokenInterface, inputAmount: number) => {
     if (!chain) {
-      // 处理没有获取到链的信息，可能是返回 `undefined` 的情况
       throw new Error("Chain information is unavailable");
     }
     // Token
