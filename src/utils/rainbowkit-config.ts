@@ -6,7 +6,7 @@ import {
 import { http } from 'wagmi';
 export const config = getDefaultConfig({
   appName: 'wallet-connect',
-  projectId: process.env.NEXT_PUBLIC_WEB3MODAL_PROJECT_ID as string,
+  projectId: '3d248077028e451da840e0ffc5da65b3' as string,
   chains: [
     mainnet,
     sepolia,
