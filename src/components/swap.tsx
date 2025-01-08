@@ -58,11 +58,17 @@ export const Swap = () => {
     setOutputAmount(outputAmount);
     setLoading(false);
   };
-  const handleTokenOneChange = (newToken: Token) => {
+  const handleTokenOneChange = async (newToken: Token) => {
     setTokenOne(newToken);
+    if (inputAmount > 0) {
+      await getSwapPrice(inputAmount)
+    }
   };
-  const handleTokenTwoChange = (newToken: Token) => {
+  const handleTokenTwoChange =async (newToken: Token) => {
     setTokenTwo(newToken);
+    if (inputAmount > 0) {
+      await getSwapPrice(inputAmount)
+    }
   };
   const handleConnectWallet = () => {
     if (!isConnected && openConnectModal) {
